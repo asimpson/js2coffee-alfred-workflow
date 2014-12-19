@@ -17,11 +17,33 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>49D05FF3-C5C8-428E-8BC1-1E07FEA36F97</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5F358966-DBE1-4D17-AF0C-F7302F1CF9E9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>87D2CF1D-75D9-4A7A-A6CF-FFA2C087BBB8</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>A46C50B0-7456-464C-B867-EF9934808B76</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>B6AB55D8-B838-4504-B721-FC6BA81C41DC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>49D05FF3-C5C8-428E-8BC1-1E07FEA36F97</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -88,6 +110,50 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>title</key>
+				<string>JS2Coffee Restored!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5F358966-DBE1-4D17-AF0C-F7302F1CF9E9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>js2restore</string>
+				<key>subtext</key>
+				<string>Replaces existing installation of JS2Coffee with the latest from npm</string>
+				<key>text</key>
+				<string>Restore JS2Coffee</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B6AB55D8-B838-4504-B721-FC6BA81C41DC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>4</integer>
 				<key>script</key>
@@ -102,6 +168,23 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>./clean.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>49D05FF3-C5C8-428E-8BC1-1E07FEA36F97</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -112,15 +195,30 @@
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>49D05FF3-C5C8-428E-8BC1-1E07FEA36F97</key>
+		<dict>
+			<key>ypos</key>
+			<real>280</real>
+		</dict>
+		<key>5F358966-DBE1-4D17-AF0C-F7302F1CF9E9</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
 		<key>87D2CF1D-75D9-4A7A-A6CF-FFA2C087BBB8</key>
 		<dict>
 			<key>ypos</key>
-			<real>140</real>
+			<real>160</real>
 		</dict>
 		<key>A46C50B0-7456-464C-B867-EF9934808B76</key>
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>B6AB55D8-B838-4504-B721-FC6BA81C41DC</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
