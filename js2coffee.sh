@@ -2,7 +2,11 @@ function convertToCoffee {
   PATH=$(npm bin):$PATH
   mkdir -p alfredtmp && cd alfredtmp
   pbpaste > tmp.js
-  "$(npm bin)/js2coffee" tmp.js > tmp.coffee
+  if [ -d "$(npm bin)" ]; then
+    "$(npm bin)/js2coffee" tmp.js > tmp.coffee
+  else
+    js2coffee tmp.js > tmp.coffee
+  fi
   cat tmp.coffee | pbcopy
   cd ../ && rm -r alfredtmp
 }
